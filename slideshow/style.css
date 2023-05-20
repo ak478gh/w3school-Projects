@@ -1,0 +1,43 @@
+.container{
+  position: relative;
+  width: 900px;
+  margin: auto;
+}
+
+.container span{
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  left: 10px;
+}
+.container img{
+  width: 100%;
+}
+.container i{
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 2px;
+  color: white;
+  position: absolute;
+  transition: 0.5s;
+  bottom: 45%;
+}
+.container i:hover{
+  background-color: #bbb;
+}
+.container #right{
+  right: 0;
+}
+.container #left{
+  left: 0;
+}
+.btns{
+  width: 100px;
+  text-align: center;
+  margin: auto;
+}
+.btns button{
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 50%;
+}
