@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Overlay Fade</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .container{
+            display: flex;
+            background-color: #ccc;
+            border-radius: 5px;
+            width: 70vw;
+            margin: auto;
+        }
+        .card{
+            width: 50%;
+            padding: 5px;
+            position: relative;
+        }
+        .card img{
+            width: 100%;
+            position: relative;
+            transition: 0.5s;
+            /* display: none; */
+        }
+        .background{
+            background-color: teal;
+            height: 82.5%;
+        }
+        .text{
+            position: absolute;
+            top: 55%;
+            color: white;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* z-index: 1; */
+        }
+        .background button{
+            padding: 10px 5px;
+            background-color: rgb(9, 116, 9);
+            border: none;
+        }
+        .card img:hover{
+            opacity: 0;
+        }
+        .background #user2:hover{
+            opacity: 0.3;
+        }
+        .card:hover #btn{
+            z-index: 1;
+        }
+        .card #btn:hover+img{
+            opacity: 0.3;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>Example</h3>
+            <p>Fade in text:</p>
+
+            <div class="background">
+                <p class="text">Hello, User</p>
+                <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="">
+            </div>
+        </div>
+        <div class="card">
+            <h3>Example</h3>
+            <p>Fade in box:</p>
+            <div class="background">
+                <button id="btn" class="text">Hello, User</button>
+                <img id="user2" src="https://www.w3schools.com/w3css/img_avatar3.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

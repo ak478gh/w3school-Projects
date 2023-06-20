@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Overlay Slide</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .container{
+            display: flex;
+            background-color: #ccc;
+            border-radius: 5px;
+            width: 70vw;
+            margin: auto;
+        }
+        .card{
+            width: 50%;
+            border: 1px solid;
+            padding: 5px;
+            position: relative;
+        }
+        .card img{
+            width: 100%;
+        }
+        .card .background{
+            position: absolute;
+            background-color: hotpink;
+            transition: 0.5s;
+            overflow: hidden;
+            width: 95%;
+        }
+        .card .text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: white;
+            font-size: 20px;
+            transform: translate(-50%, -50%);
+        }
+        .card #user1{
+            top: 45px;
+            height: 0;
+        }
+        .card:hover #user1{
+            height: 79.4%;
+        }
+        .card #user2{
+            bottom: 9px;
+            height: 0;
+        }
+        .card:hover #user2{
+            height: 79%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>Example</h3>
+            <p>Fade in text:</p>
+            <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="">
+            <div id="user1" class="background">
+                <p class="text">Hello, User</p>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Example</h3>
+            <p>Fade in box:</p>
+            <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="">
+            <div id="user2" class="background">
+                <p class="text">Hello, User</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

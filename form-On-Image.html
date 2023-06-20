@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form on Image</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .container{
+            width: 50vw;
+            margin: auto;
+            position: relative;
+        }
+        .container img{
+            width: 100%;
+        }
+        .container .form{
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            right: 10px;
+            width: 35%;
+            background-color: #fff;
+            padding: 0 10px;
+        }
+        .form h3{
+            font-size: 30px;
+        }
+        .form input{
+            padding: 15px;
+            width: 85%;
+            background-color: #eee;
+            border: none;
+            display: block;
+            margin: 0 0 20px 0;
+        }
+        .form label{
+            font-weight: bold;
+        }
+        #submit{
+            width: 100%;
+            background-color: #0095f6;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://c4.wallpaperflare.com/wallpaper/435/653/205/landscape-mountains-scene-scenery-wallpaper-preview.jpg" alt="">
+        <div class="form">
+            <h3>Login</h3>
+            <form action="">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter Email">
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="" placeholder="Enter Password">
+
+                <input type="submit" name="" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
