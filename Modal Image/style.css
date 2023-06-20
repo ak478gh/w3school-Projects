@@ -1,0 +1,54 @@
+*{
+  text-align: center;
+}
+#img{
+  width: 100px;
+  cursor: pointer;
+  margin: auto;
+}
+#img:hover{
+  opacity: 0.8;
+}
+#content{
+  position: absolute;
+  display: none;
+  border: 1px solid;
+  text-align: center;
+  width: 99vw;
+  /* color: white; */
+  top: 0;
+  background-color: #000;
+  opacity: 0;
+  height: 99vh;
+}
+#img2{
+  position: absolute;
+  width: 0;
+  top: 0;
+  transition: 0.5s;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 1;
+}
+#icon{
+  position: absolute;
+  display: none;
+  cursor: pointer;
+  z-index: 1;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  top: 0;
+  right: 0;
+}
+#cap{
+  position: absolute;
+  display: none;
+  z-index: 1;
+  transition: bottom 0.5s;
+  bottom: 0;
+  color: white;
+  font-size: 20px;
+  left: 45%;
+}
